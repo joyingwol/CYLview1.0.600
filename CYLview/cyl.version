@@ -1,0 +1,95 @@
+VERSION 1.0 BETA
+CORE    600
+MENUS   600
+FILTERS 600
+# **** CYLview20 is OUT **** Get it at www.cylview.org ****
+#
+# CYLview 2.0 : Completely redesigned program will be available in 2019. Check website (www.cylview.org) for more details.
+#
+# Bug Fix : Generate Button will work again with Absolute Scale Rendering
+#
+# Minor update : Gaussian16 output files containing a frequency calculation can now be opened.
+#
+# New menu : Custom - You can define custom parameters, such as new color schemes and custom atoms and bonds finish. Refer to POVray documentation for information concerning finish properties.
+#
+# Config Menu : You can now define a startup working directory and enable CYLview to always open in that directory.
+#
+# Atoms Menu : A group list was added. You can save atoms groups to rapidly save portions of molecules, they can be saved to XYZ files. A BSSE function was added, to generate formatted cartesian files containing fragment definition used for Counterpoise calculations in Gaussian.
+#
+# Style Menu : A number of new options, such as custom background color, quadrant color, and quadrant size, were added.
+#
+# Atoms up to Nobelium are now recognized.
+#
+# New menu : Scan - You can open gaussian scan and multi-structure xyz files, and use them to make movies. If values are given as title for each xyz, they will be used to generate a relative energy diagram in the box.
+# 
+# New Dynamic TS bond (DYNTS) : Useful for movies of multi-structure xyz files, the bond will dynamically change appearance depending of how near it is to the normal covalent bond distance.
+#
+# Please check the new "Dashed TS bonds" option in Config Menu : it enables an alternative way to represent TS bonds
+# 
+# Dummy("X") atoms are now recognized, they will appear in the molecular viewer, but will be invisible in the rendering. To use this feature, select atoms while in the Atoms Menu and click the Dummy Atom button, a dummy atom will be created at the centroid of the selected atoms.
+#
+# Solved a bug causing rendering to crash in Windows when there are labels on the structure
+#
+# Solved a bug causing labels to disappear when some atoms are hidden
+#
+# New feature : CYLview can automatically check for updates
+#
+# TS bond style is now back to normal
+#
+# Resolved a problem with animation generation at higher resolution. 1024x768 changed to 1008x756 as a workaround
+#
+# Resolved a problem with animation timings (for animation longer than 4 seconds)
+#
+# Resolved a file creation problem while rendering
+#
+# The animation module is now available, but may still contains a few bugs. Please contact me if you have any problems
+#
+# Anaglyph : Toggle the "3D" button to render your structures in anaglyph (red-cyan) format
+#
+# Resolved problem when CWD is longer than the program window
+#
+# CYLview now interfaces with OpenBabel. If installed, it will open over 40 file formats
+#
+# Extension filters toggles have been replaced by a filemask entry. The files in the CWD are dynamically filtered by the mask typed
+# 
+# Resolved multiple issues concerning files opening
+#
+# Resolved an issue with the case type of file extensions
+#
+# CYLview is now available online, http://www.cylview.org
+#
+# First public version
+#
+# Redesigned interface
+#
+# Implemented registration function
+#
+# New menu: Optimization (Opt), inspect geometry optimizations from Gaussian 03 outputs
+#
+# New menu: Frequency (Freq), inspect frequency jobs from Gaussian 03 outputs
+#
+# Minor format update: Basic capability to open G98 output files
+#
+# New format filter: PDB file (it is still experimental, if CYLview does not open your file or crash while opening it, please send me your PDB file)
+#
+# New feature: POVfile generation button in the main menu (more news about that later)
+#
+# New feature: Poses Menu, you can now save different orientations of your molecule. These poses will be saved automatically in the cyl file. You can set CYLview to use pose name as a suffix to your image filename when you generate an image (see Config Menu).
+#
+# New feature: The sensitivity to create link lines can now be set in the Config menu
+#
+# New feature: Newman projection added (Newm button)
+#
+# Resolved crash issue when attempting to open a corrupted or wrong file format
+# 
+# Resolved crash issues when fast clicking in the file browser
+#
+# New feature, Absolute scale rendering: When rendering using the Generate button, the resolution is set so that the structures have always the same size
+#
+# Style menu redesigned
+#
+# New feature: Focus scale on screen
+#
+# Resolve drag and drop problem in Mac version
+#
+# New Feature: One button mouse mode
