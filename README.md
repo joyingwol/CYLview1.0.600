@@ -1,4 +1,4 @@
-# CYLview1.6.0
+# CYLview 1.0.600
 
 `CYLview v1.0.561 BETA` can no longer check for version updates properly. After entering registration information, the following error will be displayed:
 
