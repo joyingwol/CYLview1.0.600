@@ -15,7 +15,7 @@ Through Fiddler packet capture, the URLs for checking version updates and regist
 
 ![](https://s2.loli.net/2025/07/17/OvGTCM7xbBV5Iw6.png)
 
-This repository contains the full version of `CYLview v1.6.0 BETA`.
+This repository contains the full version of `CYLview v1.0.600 BETA`.
 
 Below is the copyright statement for this software:
 
