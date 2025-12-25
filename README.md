@@ -1,111 +1,65 @@
-# CYLview 1.0.600 – Full Working Distribution
+# CYLview 1.0.600 (Windows) – Archived Distribution
 
-This repository provides a **full working distribution of CYLview version 1.0.600**, created to address the issue where older versions of CYLview can no longer update themselves due to server-side restrictions.
+This repository provides an **archived Windows distribution of CYLview version 1.0.600**.
+
+It exists as a mirror for users affected by the failure of the legacy update mechanism in older CYLview releases.
+
+---
+
+## Platform
+
+- **Windows only**
+- Linux and macOS versions are **not included**
+
+---
 
 ## Background
 
-Older versions of CYLview (e.g. v1.0.561 BETA) are no longer able to check for updates.  
-When launched, the program attempts to contact the official update server, which now responds with **HTTP 403 Forbidden**, causing update checks to fail and sometimes leading to runtime errors such as:
+Older CYLview versions are no longer able to check for updates due to server-side changes.  
+The official update endpoint now returns **HTTP 403 Forbidden**, causing update checks to fail.
 
-```bash
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "Tkinter.pyc", line 1403, in __call__
-  File "/Users/Claude/workspace/CYLVIEW_PROJECT/cylview/modules/about.py", line 98, in <lambda>
-  File "/Users/Claude/workspace/CYLVIEW_PROJECT/cylview/modules/about.py", line 141, in check_for_updates
-UnboundLocalError: local variable 'curr_version' referenced before assignment
-````
+CYLview v1.0.600 does not rely on the obsolete update mechanism and can be used directly.
 
-As a result, users are unable to update CYLview through the official mechanism.
+A brief technical discussion is documented here (zh-CN):
+- https://note.chukogals.top/archives/172/
 
-This repository exists to provide a **ready-to-use, already-updated version (v1.0.600)** so that users can continue using CYLview without relying on the broken update process.
+---
 
-For a detailed investigation, see the related blog post (zh-CN): <https://note.chukogals.top/archives/172/>
+## Contents
 
-## Technical Analysis (Summary)
+- Complete Windows program directory of **CYLview v1.0.600**
+- No installer, no updater, no modifications
 
-A brief technical summary of the issue:
+This repository does **not** contain source code.
 
-- Older CYLview versions perform an automatic update check during startup
-- The update check sends an HTTP request to the official update endpoint
-- The server now consistently responds with **403 Forbidden**
-- The client-side update logic does not properly handle this response
-- This may result in:
-  - Failed update checks
-  - GUI exceptions (e.g. Tkinter callback errors)
-  - User confusion, as no valid update path is provided
+---
 
-Because the failure occurs **before user interaction** and is server-side, it cannot be reliably fixed by local configuration alone.
+## Usage (Windows)
 
-Using a newer, already-updated version (v1.0.600) avoids triggering the legacy update logic entirely.
+1. Download or clone this repository
+2. Extract to a local directory
+3. Run `CYLview.exe`
 
-> Note: This repository does not attempt to patch, hook, or modify the update mechanism.  
-> It simply provides a version that no longer relies on the obsolete update endpoint.
+---
 
-## What This Repository Is
+## Scope & Limitations
 
-- ✅ A **complete program directory** of CYLview v1.0.600  
-- ✅ Can be used as a **drop-in replacement** for older versions  
-- ✅ No need to run the built-in updater  
+- This is an **archival mirror**, not an official release
+- No patches, cracks, or reverse engineering are involved
+- No cross-platform support is provided
 
-## What This Repository Is NOT
+---
 
-- ❌ This is **not the source code** of CYLview  
-- ❌ This repository does **not modify, crack, or reverse-engineer** CYLview  
-- ❌ No license checks, DRM, or security mechanisms are bypassed  
+## License & Disclaimer
 
-This is a redistribution of an already released version for practical use.
-
-## Usage
-
-### Download
-
-Clone the repository:
-
-```bash
-git clone https://github.com/joyingwol/CYLview1.0.600.git
-````
-
-Or download it as a ZIP archive and extract it.
-
-### Run
-
-1. Extract the files to a directory with an **ASCII-only path**
-2. Run the main executable:
-
-   * Windows: `CYLview.exe`
-   * Linux / macOS: corresponding binary or launch script (if included)
-
-## Compatibility Notes
-
-* Intended as a replacement for older CYLview installations affected by update failures
-* Works offline (no update check required)
-* If problems occur, remove old configuration files before testing
-
-## Motivation
-
-The purpose of this repository is to:
-
-* Preserve access to a functional CYLview version
-* Provide a practical workaround for a broken update mechanism
-* Document a reproducible solution for affected users
-
-This is particularly useful in academic and research environments where CYLview is part of an established workflow.
-
-## License & Copyright
-
-CYLview is copyrighted software.
+CYLview is copyrighted software.  
 All rights remain with the original author(s).
 
-This repository does **not claim ownership** of CYLview.
-All original copyright notices are preserved.
+This repository:
+- Is **not affiliated with or endorsed by** the CYLview developers
+- Is provided **as-is**, without warranty
+- Is intended for **archival, educational, and research purposes**
 
-## Disclaimer
+Users are responsible for ensuring compliance with applicable licenses and laws.
 
-* This project is **not affiliated with, sponsored by, or endorsed by** the official CYLview developers.
-* The software is provided **as-is**, without any warranty.
-* This repository is intended for **educational, archival, and research purposes** only.
-* Users are responsible for ensuring that their use of CYLview complies with applicable licenses and local laws.
-
-If you are the copyright holder and believe this repository should be modified or taken down,
-please write an email to <mailto:joyingwol@126.com> to discuss the matter.
+If you are the copyright holder and wish to request modification or removal, please open an Issue for discussion.
