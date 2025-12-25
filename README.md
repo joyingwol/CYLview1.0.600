@@ -4,14 +4,14 @@ This repository provides an **archived Windows distribution of CYLview version 1
 
 It exists as a mirror for users affected by the failure of the legacy update mechanism in older CYLview releases.
 
----
+
 
 ## Platform
 
 - **Windows only**
 - Linux and macOS versions are **not included**
 
----
+
 
 ## Background
 
@@ -23,7 +23,7 @@ CYLview v1.0.600 does not rely on the obsolete update mechanism and can be used 
 A brief technical discussion is documented here (zh-CN):
 - https://note.chukogals.top/archives/172/
 
----
+
 
 ## Contents
 
@@ -32,7 +32,7 @@ A brief technical discussion is documented here (zh-CN):
 
 This repository does **not** contain source code.
 
----
+
 
 ## Usage (Windows)
 
@@ -40,7 +40,7 @@ This repository does **not** contain source code.
 2. Extract to a local directory
 3. Run `CYLview.exe`
 
----
+
 
 ## Scope & Limitations
 
@@ -48,7 +48,7 @@ This repository does **not** contain source code.
 - No patches, cracks, or reverse engineering are involved
 - No cross-platform support is provided
 
----
+
 
 ## License & Disclaimer
 
