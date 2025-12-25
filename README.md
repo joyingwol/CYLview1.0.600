@@ -28,7 +28,7 @@ A brief technical discussion is documented here (zh-CN):
 ## Contents
 
 - Complete Windows program directory of **CYLview v1.0.600**
-- No installer, no updater, no modifications
+- No installer, no modifications
 
 This repository does **not** contain source code.
 
